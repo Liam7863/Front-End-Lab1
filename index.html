@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accommodation at a Hotel</title>
+<style>
+  body {
+    background-image: url('background-image.jpg'); /* Замініть на потрібний URL зображення фону */
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  hr {
+    border: none;
+    border-top: 5px solid white;
+    margin: 20px 0;
+  }
+  @keyframes moveText {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(450%); }
+  }
+  .moving-text {
+    position: absolute;
+    top: 5%;
+    left: -10%;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: italic;
+}
+  .colored .word1 { color: red; }
+  .colored .word2 { color: green; }
+  .colored .word3 { color: blue; }
+  .colored .word4 { color: orange; }
+  .colored .word5 { color: purple; }
+  
+  .crossed-out {
+    animation: increaseSize 10s linear infinite, changeColor 6s linear infinite;
+    text-decoration: line-through;
+    font-size: 1em;
+  }
+  
+  @keyframes increaseSize {
+    0% { font-size: 1em; }
+    50% { font-size: 2em; }
+    100% { font-size: 3em; }
+  }
+  
+  @keyframes changeColor {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+</style>
+</head>
+<body>
+
+  <h1 style="text-align: center;">
+    <span class="bold-large">ACCO</span><!--
+    --><span class="small">MODA</span><!--
+    --><span class="bold-large">TION</span><!--
+    --><span class="bold-large italic">А</span><!--
+    --><span class="small italic">T</span><!--
+    --><span class="bold-large">А</span><!--
+    --><span class="bold small">Н</span><!--
+    --><span class="bold-large">ГОТЕЛ</span>
+  </h1>
+  
+<p class="moving-text colored">
+  <span class="word1">Робота</span>
+  <span class="word2">виконана</span>
+  <span class="word3">студентом:</span>
+  <span class="word4">Жегало</span>
+  <span class="word5">Олексій</span>
+</p>
+
+<p style="text-align: center; margin-bottom: 20px;">
+  <span class="crossed-out"> Can I have a double room from now until Monday?</span>
+</p>
+  
+<p style="text-align: right; white-space: nowrap; font-weight: bold; margin-bottom: 20px;">
+  Ви можете мати Room 5, <span style="vertical-align: super; font-weight: bold; font-style: italic; color: blue;">overlooking the sea</span>.
+</p>
+  
+<p style="text-align: left; font-style: italic; font-size: 19px; transform: rotate(10deg); margin-bottom: 20px;">What does it cost?</p>
+  
+<p style="font-family: monospace; font-weight: bold; margin-bottom: 20px;">
+  40000 lire a day,<br>not counting the service.
+</p>
+
+<p style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 20px;">
+  Can I have a look at this room, please?
+</p>
+
+<pre style="text-align: center; font-weight: bold; font-size: 1.2em; margin-bottom: 20px;">
+  Yes, of course. Come this way.
+</pre>
+
+<p style="text-align: center; font-size: 1.2em; font-weight: bold; white-space: nowrap; margin-bottom: 20px;">
+  Чи може ви говорити про деякий cheaper, але також з поглядом на море?
+</p>
+
+<p style="text-align: center; font-family: Courier, monospace; font-weight: bold; font-size: 1em; color: green; margin-bottom: 20px;">
+  Yes, <span style="font-size: 0.9em;"><sub>of course</sub></span>. I won't keep you a moment.
+</p>
+
+<hr>
+
+</body>
+</html>
